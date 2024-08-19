@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Mr. SOUMANOU Beldane</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+            background: url('D:\Lamborghini_Aventador_457772_3840x2400.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .welcome-banner {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 35px 0;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .welcome-banner h1 {
+            font-size: 28px;
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translateY(-100%);
+            animation: slide 14s linear infinite;
+        }
+
+        @keyframes slide {
+            0% { left: 100%; }
+            100% { left: -10%; }
+        }
+        .button {
+            margin: 20px;
+            padding: 15px 25px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #808080; /* Gray color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #696969; /* Darker gray */
+        }
+        .blurred {
+            filter: blur(5px);
+        }
+        .buttons-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .buttons-row .button {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .content-section {
+            text-align: left;
+            margin: 20px 0;
+            padding: 10px;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            display: none;
+            z-index: 1000; 
+        }
+        .loader {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            z-index: 1001; /* Ensure the loader is above the blurred content */
+        }
+
+        .content {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        .taptoearn-section {
+            margin-top: 30px;
+        }
+
+        .taptoearn-section h2 {
+            font-size: 24px;
+            color: #FFD700; /* Golden color */
+        }
+
+        .taptoearn-section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .image-row img {
+            width: 48%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .telegram-link {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .telegram-link:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+     <div class="overlay" id="overlay"></div>
+     <div class="overlay" id="overlay"></div>
+    <div class="loader" id="loader">
+        Loading... <span id="progress">0%</span>
+    </div>
+    <script>
+        function redirect(url) {
+            document.body.classList.add('blurred'); // Ajouter l'effet de flou avant la redirection
+
+            setTimeout(function() {
+                window.location.href = url;
+            }, 500); // Attente de 1 seconde avant la redirection
+        }
+    </script>
+</head>
+<body>
+
+    <div class="welcome-banner">
+        <h1>WELCOME TO MONEYSKILLS65!</h1>
+    </div>
+    
+
+    <div class="content">
+        <div class="taptoearn-section">
+            <h2>What is Tap2earn?</h2>
+            <p>
+                TapToEarn is a popular way to earn money by performing simple tasks on your smartphone. Whether it's clicking on ads, completing surveys, or playing games, TapToEarn platforms reward users for their engagement. It's a convenient way to make some extra income in your spare time.He refers to a mobile or web-based platform where users can earn rewards or money by simply tapping on their screens. These platforms are designed to be straightforward, allowing users to earn through basic actions like watching ads, completing tasks, or playing games. Unlike traditional earning methods, which require more time and effort, *tap to earn* models provide a quicker and more accessible way to make small amounts of money.
+
+                Users typically download an app or visit a website, where they can start earning by engaging with the content provided. The tasks are usually very simple, such as clicking on advertisements, participating in surveys, or playing mini-games. In return for these actions, users earn points or credits, which can later be converted into cash, gift cards, or other rewards. The amount earned per tap is generally small, but with consistent use, these small earnings can accumulate over time.
+
+                
+            </p>
+        </div>
+
+        <div class="taptoearn-section">
+            <h2>Popular TapToEarn Platforms</h2>
+            
+            <div class="taptoearn">
+                <h3>Platform 1: BananaBot </h3>
+                <div class="image-row">
+                    <img src="D:\banana1.jpg">
+                    <img src="D:\banana2.jpg" alt="CashTap Earnings">
+                </div>
+                <p>
+                    BananaBot is a tap-to-earn Telegram bot that allows users to easily earn rewards by completing simple tasks. Just tap, complete challenges, and watch your earnings grow. Fast, fun, and hassle-free—start earning with BananaBot today!
+                </p>
+                <a href="
+                https://t.me/OfficialBananaBot/banana?startapp=referral=FGOM0Q5 " class="telegram-link">
+                https://t.me/OfficialBananaBot/banana?startapp=referral=FGOM0Q5 </a>
+            </div>
+
+            <div class="taptoearn">
+                <h3>Platform 2: CoineggBot</h3>
+                <div class="image-row">
+                    <img src="D:\coinegg1.jpg" alt="EasyCoins Interface">
+                    <img src="D:\coinegg2.jpg" alt="EasyCoins Rewards">
+                </div>
+                <p>
+                   CoinEggBot allows you to earn cryptocurrency by completing easy tasks like tapping buttons and engaging with content on Telegram. It’s a user-friendly way to grow your crypto earnings with quick payouts and straightforward actions.
+                </p>
+                 <a href="
+                https://t.me/coinegg_miner_bot/miniapp?startapp=kBNoWEHfEAAvN72sCob
+
+                " class="telegram-link">
+               https://t.me/coinegg_miner_bot/miniapp?startapp=kBNoWEHfEAAvN72sCob
+
+                </a>
+            </div>
+
+            <!-- Add more platforms as needed -->
+        </div>
+            <div class="taptoearn">
+                <h3>Platform 3: TIME TO TON</h3>
+                <div class="image-row">
+                    <img src="D:\Timetoton1.jpg" alt="EasyCoins Interface">
+                    <img src="D:\Timetoton2.jpg" alt="EasyCoins Rewards">
+                </div>
+                <p>
+                   Timetoton is a Telegram bot that allows you to earn TON cryptocurrency through referrals. Invite friends, expand your network, and watch your TON balance grow effortlessly with Timetoton.
+                </p>
+                 <a href="
+               https://t.me/timetoton_bot?start=02449872335
+
+                " class="telegram-link">
+               https://t.me/timetoton_bot?start=02449872335
+
+                </a>
+            </div>
+                <div class="taptoearn">
+                <h3>Platform 4: Gamee</h3>
+                <div class="image-row">
+                    <img src="D:\Gamee1.jpg" alt="EasyCoins Interface">
+                    <img src="D:\Gamee2.jpg" alt="EasyCoins Rewards">
+                </div>
+                <p>
+                   GAMEE is a mobile gaming platform that allows users to play various casual games, compete in challenges, and earn rewards, often in the form of cryptocurrency or tokens. It’s designed to make gaming more engaging by integrating social features, leaderboards, and opportunities to earn digital assets while playing. The platform is accessible through a mobile app and aims to combine entertainment with the potential for real-world rewards.
+                </p>
+                 <a href="
+               https://t.me/gamee/start?startapp=ref_6241870351
+
+                " class="telegram-link">
+               https://t.me/gamee/start?startapp=ref_6241870351
+
+                </a>
+            </div>
+                <div class="taptoearn">
+                <h3>Platform5: X Empire</h3>
+                <div class="image-row">
+                    <img src="D:\Xempire1.jpg" alt="EasyCoins Interface">
+                    <img src="D:\Xempire2.jpg" alt="EasyCoins Rewards">
+                </div>
+                <p>
+                   XEmpire is a Telegram bot that lets you earn cryptocurrency by completing tasks and engaging in activities. Easy to use and rewarding, XEmpire helps you grow your crypto portfolio with minimal effort.
+                </p>
+                 <a href="
+               https://t.me/muskempire_bot/game?startapp=hero6241870351
+
+                " class="telegram-link">
+               https://t.me/muskempire_bot/game?startapp=hero6241870351
+
+                </a>
+            </div>
+                <div class="taptoearn">
+                <h3>Platform6: Blum</h3>
+                <div class="image-row">
+                    <img src="D:\Blum1.jpg" alt="EasyCoins Interface">
+                    <img src="D:\Blum2.jpg" alt="EasyCoins Rewards">
+                </div>
+                <p>
+                   Blum is a “TapToEarn” bot on Telegram that allows users to earn cryptocurrencies, usually by completing simple tasks such as clicking buttons, watching ads, or completing specific missions. Users are rewarded for their engagement and can accumulate earnings that they can later withdraw in cryptocurrency. Blum stands out for its simplicity and accessibility, offering an easy opportunity for those who want to earn crypto without any initial investment.
+                </p>
+                 <a href="
+               https://t.me/BlumCryptoBot/app?startapp=ref_rqtUleHpzq
+
+                " class="telegram-link">
+               https://t.me/BlumCryptoBot/app?startapp=ref_rqtUleHpzq
+
+                </a>
+            </div>
+                  <div class="taptoearn">
+                <h3>Platform7: Major</h3>
+                <div class="image-row">
+                    <img src="D:\Major1.jpg" alt="EasyCoins Interface">
+                    <img src="D:\Major2.jpg" alt="EasyCoins Rewards">
+                </div>
+                <p>
+                  Major on Telegram appears to be a bot or a mini-app where users can participate in rankings by accumulating points or stars. It seems that there is a monthly leaderboard with different users or bots, and it’s possible to boost your rank. Points are likely earned by participating in certain activities or completing specific actions.
+                </p>
+                 <a href="
+               https://t.me/major/start?startapp=6241870351
+
+                " class="telegram-link">
+               https://t.me/major/start?startapp=6241870351
+
+                </a>
+            </div>
+
+                <div class="taptoearn">
+                <h3>Platform8: W-Coin</h3>
+                <div class="image-row">
+                    <img src="D:\wcoin1.jpg" alt="EasyCoins Interface">
+                    <img src="D:\wcoin2.jpg" alt="EasyCoins Rewards">
+                </div>
+                <p>
+                  The W-Coin project on Telegram is a mini-app where users can earn and manage W-Coins, possibly through gaming, community participation, and blockchain integration. Features include a growing community, blockchain selection, and the opportunity to receive W-Coins through airdrops.
+                </p>
+                 <a href="
+               https://t.me/wcoin_tapbot?start=NjI0MTg3MDM1MQ==
+
+                " class="telegram-link">
+               https://t.me/wcoin_tapbot?start=NjI0MTg3MDM1MQ==
+
+                </a>
+            </div>
+                <div class="taptoearn">
+                <h3>Platform9: Hamster Kombat</h3>
+                <div class="image-row">
+                    <img src="D:\Hamster1.jpg" alt="EasyCoins Interface">
+                    <img src="D:\Hamster2.jpg" alt="EasyCoins Rewards">
+                </div>
+                <p>
+                  Hamster Kombat is a game-based project where users engage in battles or challenges using virtual hamsters. Players can participate in mini-games, earn rewards, and possibly trade or upgrade their hamsters. The project seems to blend gaming with collectible elements, offering a fun and competitive experience for users.
+                </p>
+                 <a href="
+              https://t.me/hamster_Kombat_bot/start?startapp=kentId6241870351
+
+                " class="telegram-link">
+               https://t.me/hamster_Kombat_bot/start?startapp=kentId6241870351
+
+                </a>
+            </div>
+                  <div class="taptoearn">
+                <h3>Platform10: Tomarket</h3>
+                <div class="image-row">
+                    <img src="D:\tomarket1.jpg" alt="EasyCoins Interface">
+                    <img src="D:\tomarket2.jpg" alt="EasyCoins Rewards">
+                </div>
+                <p>
+                Tomarket is a mobile gaming platform that allows users to play various casual games, compete in challenges, and earn rewards, often in the form of cryptocurrency or tokens. It’s designed to make gaming more engaging by integrating social features, leaderboards, and opportunities to earn digital assets while playing. The platform is accessible through a mobile app and aims to combine entertainment with the potential for real-world rewards.
+                Farm $TOMATO with me and secure your token allocation through Tomarket.Use my link to get 2,000 $TOMATO
+                </p>
+                 <a href="
+              https://t.me/Tomarket_ai_bot/app?startapp=000005by
+
+                " class="telegram-link">
+               https://t.me/Tomarket_ai_bot/app?startapp=000005by
+
+                </a>
+            </div>
+                <div class="taptoearn">
+                <h3>Platform11: Pepe Gold Miner Bot</h3>
+                <div class="image-row">
+                    <img src="D:\pepe1.jpg" alt="EasyCoins Interface">
+                    <img src="D:\pepe2.jpg" alt="EasyCoins Rewards">
+                </div>
+                <p>
+                Pepe Miner Gold is a project in the cryptocurrency space that focuses on mining and earning Pepe tokens. The project typically involves a system where users can participate in mining activities to accumulate Pepe tokens, often tied to the broader meme and cryptocurrency culture. This project may leverage unique mechanisms or platforms to engage users and incentivize participation through mining rewards.
+                </p>
+                 <a href="
+              https://t.me/pepegoldminer_bot?start=r_6241870351
+
+                " class="telegram-link">
+               https://t.me/pepegoldminer_bot?start=r_6241870351
+
+                </a>
+            </div>
+                 <div class="taptoearn">
+                <h3>Platform12: Battle Bulls</h3>
+                <div class="image-row">
+                    <img src="D:\battle1.jpg" alt="EasyCoins Interface">
+                    <img src="D:\battle2.jpg" alt="EasyCoins Rewards">
+                </div>
+                <p>
+               Battle Bulls is a game bot available on Telegram. It’s an online combat game where players can take on the role of bull-shaped characters and battle each other in arenas. The game includes strategic elements, allowing players to upgrade their bulls, use special skills, and participate in events or tournaments. The business model may involve in-app purchases or rewards for winning battles.
+               The game is popular within Telegram communities for its competitive nature and social interactions.
+                </p>
+                 <a href="
+              https://t.me/battle_games_com_bot/start?startapp=frndId6241870351
+
+                " class="telegram-link">
+               https://t.me/battle_games_com_bot/start?startapp=frndId6241870351
+
+                </a>
+                </div>
+                 <div class="taptoearn">
+                <h3>Platform13: Sky Rocket TopBot</h3>
+                <div class="image-row">
+                    <img src="D:\sky1.jpg" alt="EasyCoins Interface">
+                    <img src="D:\sky2.jpg" alt="EasyCoins Rewards">
+                </div>
+                <p>
+              Skyrocket is a Telegram bot designed to help users manage and automate various aspects of their Telegram experience. This bot offers advanced features such as group management, task automation, and channel or group promotion. With Skyrocket, users can schedule messages, automatically invite members to groups, and use moderation tools to keep their communities organized and active. It’s especially useful for group admins or community managers looking to increase their efficiency and grow their presence on Telegram.
+                </p>
+                 <a href="
+             https://t.me/SkyRocketTopBot/Crypto?startapp=6241870351
+
+                " class="telegram-link">
+              https://t.me/SkyRocketTopBot/Crypto?startapp=6241870351
+
+                </a>
+            <!-- Add more platforms as needed -->
+        </div>
+
+        <div class="taptoearn-section">
+            <center><p>
+                Join my <a href="https://t.me/b2lwCpt4sIG5kOTNk/1" class="telegram-link">Telegram group</a> to stay updated with the latest TapToEarn opportunities and tips!
+            </p></center>
+        </div>
+    </div>
+    
+    <footer>
+        <center><strong><p>&copy; 2024 Moneyskills65. All Rights Reserved.</p></strong></center>
+    </footer>
+
+</body>
+</html>
